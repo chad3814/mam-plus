@@ -25,5 +25,9 @@ jobs:
     - run: npm run build
     - uses: actions/upload-artifact@v3
       with:
-        name: Automatic dev build
-        path: build/
+        name: Automatic dev build css
+        path: build/main.css
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Automatic dev build js
+        path: build/mam-plus_dev.user.js
